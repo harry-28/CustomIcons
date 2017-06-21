@@ -95,13 +95,13 @@ body {
 	min-height:28px;
 	min-width:32px;
 }
+.ipsCategory > .container .extended > .textBox > div ,
 .ipsCategory > .container .content .visual > .selector > div, 
-ipsCategory > .container .content .visual > .text {
+.ipsCategory > .container .content .visual > .text {
 	min-width: 100px;
 }
 .ipsCategory > .container .content .visual > .enum > div, 
-.ipsCategory > .container .extended > .textBox > div ,
-..ipsCategory > .container .content .visual > .text.colored {
+.ipsCategory > .container .content .visual > .text.colored {
 	min-width: 100px;
 	text-align:center;
 }
