@@ -100,7 +100,6 @@ body {
 .ipsCategory > .container .extended > .textBox > div ,
 .ipsCategory > .container .content .visual > .text {
 	min-width: 100px;
-	text-align: center; 
 }
 /*
 .ipsIconReturn:before {
