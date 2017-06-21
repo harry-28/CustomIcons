@@ -101,6 +101,10 @@ body {
 .ipsCategory > .container .content .visual > .text {
 	min-width: 100px;
 }
+.ipsCategory > .container .content .visual > .text colored {
+	min-width: 100px;
+	text-align:center;
+}
 /*
 .ipsIconReturn:before {
 	content: url(../user/skins/CustomIcons-master/icons/Return.png);
