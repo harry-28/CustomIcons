@@ -1,0 +1,273 @@
+/* Userdefinierte Anpassungen des Webfronts */
+/* bis Version 2.7 */
+/* Folgende Zeile in der webfront/ips.webFront.DefaultView.php ca. Zeile 85 einfügen */
+/* <link href="user/webfrontuser.css" rel="stylesheet" type="text/css" /> */
+/* ab Version 3.0 */
+/* Folgende Zeile in der webfront/index.html ca. Zeile 24 einfügen */
+/* <link href="user/webfrontuser.css" rel="stylesheet" type="text/css" /> */
+/* bessere Lösung ab Version 3.0 */
+/* im Skin CustomIcons-master in der webfront.css einbauen */
+
+/* Hauptschriftgröße */
+body {
+	/* background:#0A101A; */
+	/* background:#000000; */
+	background: transparent;
+	color:#ffffff;
+	font-size:15px;
+	font-family:arial,sans-serif;
+	margin:0;
+	padding:0;
+	overflow:hidden
+}
+.ipsWebFront {
+	background-color: #00000;
+}
+
+.ipsTabPane > .navigation ,
+.ipsContentChanger > .navigation {
+	background-color: #00000;
+}
+.ipsTabPane > .content,
+.ipsTabPane > .navigation, 
+.ipsCategory .hierarchy > .categoryNavigation {
+	background:#000000;
+}
+/* Schriftgröße Menuleiste */
+.ipsTabPane > .navigation > .scroll > .buttons > div {
+	/* background:#ff00ff; */
+	font-size:14px;
+}
+/* Schriftgröße SplitPlane */
+.ipsTabPane > .navigation > .scrollArea > .buttons > div {
+	display:inline-block;
+	border-color:rgba(255,255,255,0.2);
+	border-style:solid;
+	border-width:0 0 0 1px;
+	font-size:15px;
+	line-height:32px;
+	height:32px;
+	margin:0;
+	opacity:.5;
+	padding:0 20px;
+	position:relative
+}
+/* Schriftgröße Category */
+.ipsCategory .hierarchy > .categoryNavigation > .scrollArea > .buttons > div {
+	display:inline-block;
+	vertical-align:top;
+	border-color:rgba(255,255,255,0.2);
+	border-style:solid;
+	border-width:0 0 0 1px;
+	font-size:15px;
+	line-height:32px;
+	margin:2px 0 2px -2px;
+	opacity:.5;
+	padding:0 17px;
+	position:relative
+}
+.ipsSplitPane.border > .top {
+	/* border-bottom: 1px solid rgba(255, 255, 255, 0.15); */
+	border-bottom: 0px;
+}.ipsSplitPane.border > .left {
+	/* border-right: 1px solid rgba(255, 255, 255, 0.15); */
+	border-right: 0px;
+}
+.ipsCategory {
+	/* padding:10px 10px 0; */
+	padding:2px 2px 0;
+}
+.ipsCategory > .container {
+	/* 1  oben+unten+rechts+links */
+	/* 2  oben+unten rechts+links */
+	/* 3  oben rechts+links unten */
+	/* 4  oben rechts unten links */
+	/* margin:0 0 10px; */
+	margin:0 0 0px;
+	border-width:0;
+}
+.ipsCategory > .container .extended > .textBox, 
+.ipsCategory > .container .extended > .htmlBox,
+.ipsCategory > .container .extended > .mailbox {
+	padding:2px;
+}
+.ipsIcon {
+	min-height:28px;
+	min-width:32px;
+}
+.ipsCategory > .container .extended > .textBox > div ,
+.ipsCategory > .container .content .visual > .selector > div, 
+.ipsCategory > .container .content .visual > .text {
+	min-width: 100px;
+}
+.ipsCategory > .container .content .visual > .enum > div, 
+.ipsCategory > .container .content .visual > .text.colored {
+	min-width: 100px;
+	text-align:center;
+}
+/*
+.ipsIconReturn:before {
+	content: url(../user/skins/CustomIcons-master/icons/Return.png);
+	border-width:0;
+}
+*/
+.ipsDeviceState0 { /* geschlossen */
+	background-color:#017C01;
+}
+.ipsDeviceState1 { /* gekippt */
+	background-color:#ff00ff;
+}
+.ipsDeviceState2 { /* geöffnet */
+	background-color:#AE1E1E;
+}
+.ipsSwitchBasic {
+	width:100%;
+	height:100%;
+	border-left:1px solid #404040;
+	border-right:1px solid #404040;
+	margin:0 -1px 0 1px
+}
+.ipsSwitchBasic0 {
+	background-color:#404040;  /* grau */
+	text-align:center;
+	/* background-image:url(../img/bgActionBar.png); */
+	background-repeat:repeat
+}
+.ipsSwitchBasicOn {
+	background-color:#017C01;  /* grün */
+	/* background-color:#FFCC00;  /* gold */
+	text-align:center;
+	/* background-image:url(../img/bgActionBar.png); */
+	background-repeat:repeat
+}
+.ipsSwitchBasicOff {
+	background-color:#AE1E1E; /* rot */
+	text-align:center;
+	/* background-image:url(../img/bgActionBar.png); */
+	background-repeat:repeat
+}
+.ipsSwitchBasic2 {
+	/* background-color:#FFA201; /* orange */
+	background-color:#D8762B; /* gelborange */
+	text-align:center;
+	/* background-image:url(../img/bgActionBar.png); */
+	background-repeat:repeat
+}
+.ipsSwitchBasic3 {
+	/* background-color:#D8762B; /* gelborange */
+	background-color:#FFCC00; /* gold */
+	text-align:center;
+	/* background-image:url(../img/bgActionBar.png); */
+	background-repeat:repeat
+}
+/* Dialogbox Hintergrundfarbe */
+.ipsDialog > div {
+	position:absolute;
+	background:rgba(25,38,51,0.9);
+	text-align:center;
+	padding:35px 60px;
+	font-size:15px;
+	font-face:FuturaTEELig,verdana;
+	border-radius:6px;
+	z-index:101
+}
+
+/* DWD Überschrift */
+.ipsDWD > .report .title {
+	font-family:'Arial Narrow',arial,sans-serif;
+	font-size:17px;
+	padding:10px 10px 0
+}
+/* DWD Text */
+.ipsDWD > .report .text {
+	font-size:13px;
+	padding:10px 10px 0
+}
+/* DWD Copyright */
+.ipsDWD > .report .copyright {
+	font-size:11px;
+	padding:10px
+}
+/* DWD Menü */
+.ipsDWD > .navigation > .scrollArea > .buttons > div {
+	display:inline-block;
+	vertical-align:top;
+	border-color:rgba(255,255,255,0.2);
+	border-style:solid;
+	border-width:0 0 0 1px;
+	font-size:15px;
+	line-height:32px;
+	margin:2px 0 2px -2px;
+	opacity:.5;
+	padding:0 17px;
+	position:relative
+}
+
+/* Scrollbar rechts */
+.ipsScrollPane > .navigation {
+	display:none;
+	bottom:0;
+	position:absolute;
+	right:0;
+	top:0;
+	width:20px
+}
+.ipsNotifications > .ipsNotification.icon,
+.ipsNotifications > .ipsNotification > .message,
+.ipsNotifications > .ipsNotification > .message > .text {
+
+	background:#FFA201;
+}
+.ipsContentChanger > .navigation {
+	/* background-color:#0d1724; */
+	background-color:#000000;
+	/* background-image:url(img/bgCategoryNavigation.png); */
+	background-repeat:repeat-x;
+	background-position:top center;
+	border-top-width:1px;
+	border-top-style:solid;
+	border-top-color:#768595;
+	border-top-color:rgba(255,255,255,0.35);
+	bottom:0;
+	height:36px;
+	left:0;
+	position:absolute;
+	right:0
+}
+.ipsCategory > .container .content .visual > .selector > div:nth-child(2),
+.ipsCategory > .container .content .visual > .selector > div:nth-child(8)
+{
+	display: none;
+}
+.ipsCategory > .container .content .visual > .selector > div {
+	min-width: 30px;
+}
+
+.bg {
+	background-color:#ff00ff;
+	background-image: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,0.3) 28%,rgba(0,0,0,0.3) 100%);
+	background-image: -moz-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,0.3) 28%,rgba(0,0,0,0.3) 100%);
+	background-image: -ms-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,0.3) 28%,rgba(0,0,0,0.3) 100%);
+	background-image: -o-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,0.3) 28%,rgba(0,0,0,0.3) 100%);
+	margin:4px;
+/*	text-align:center; */
+}
+/* Darstellung der Grundrisse */
+.EG, .OG, .Keller, .Dachboden {
+	color:#ff00ff; /* schwarz */
+	background-repeat:no-repeat;
+	padding:0px;
+	margin:0px;
+}
+.EG {
+	background-image: url(../user/eg.png);
+}
+.OG {
+	background-image: url(../user/og.png);
+}
+.Keller {
+	background-image: url(../user/keller.png);
+}
+.Dachboden {
+	background-image: url(../user/dachboden.png);
+}
