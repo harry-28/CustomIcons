@@ -1,9 +1,9 @@
 {
     "author": "Harry Kellner",
-    "version": "0.1a",
+    "version": "1.0g",
     "compatible": 1,
     "url": "http:\/\/www.ip-symcon.de\/forum\/",
-    "git": "http:\/\/www.github.com\/johnDoe\/notfound\/",
+    "git": "http:\/\/www.github.com\/harry-28\/CustomIcons\/",
     "icons": [
         "Abbruch1",
         "Abbruch2",
